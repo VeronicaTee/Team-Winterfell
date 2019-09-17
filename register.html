@@ -1,70 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+html lang=&quot;en&quot;
+head
+        titleTeam Winterfell/title
+  meta charset=&quot;UTF-8&quot;
+  meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;
+  meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <style>
-    body {
-      background-image: linear-gradient(to right, rgba(156, 156, 156, 0.1), #414A48);
-    }
-
-    .leftside, .rightside{
-height: 100vh;
-width: 100%;
-}
-
-.leftside{
-    background-color: black;
-    position: absolute;
-width: 554px;
-height: 580px;
-left: 125px;
-top: 30px;
-margin-bottom: 150px;
-}
-
-.rightside{
-    background-color: darkslategray;
-    position: absolute;
+  
+/head
+style
+        body {
+          background-image: linear-gradient(to right, rgba(156, 156, 156, 0.1), #414A48);
    
-    width: 700px;
-    height: 580px;
-    right: 125px;
-    top: 30px;
-    border-top-right-radius: 92px;
-    border-bottom-right-radius: 92px;
-}
-  </style>
+          margin: 0;
+          padding: 0;
+          font-size: 16px;
+          color:black;
+          font-family:sans-serif;
+          font-weight: 300;
+          
+          
+        }
+        #login-box
+        {
+            position: relative;
+            margin: 5% auto; 
+            height: 510px;
+            width: 1000px;
+            
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+            border-top-right-radius: 50px;
+          border-bottom-right-radius: 50px;
+          background: rgba(255, 255, 255,.25);
+          box-shadow: 0 5px 15px rgba(0,0,0,.5);
+         
+          
+        }
+        .left-box{
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding: 40px;
+            width: 300px;
+            height: 510px;
+            
+            background: url(rec.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            margin: 0 0 20px;
+            font-weight: 300;
+            font-size: 28px;
+            margin-left: 35px;
+        }
+        input[type="text"],
+        input[type="password"]
+        {
+        display: block;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding: 8px;
+        width: 250px
+        height 32;
+        border: none;
+        outline:none;
+        border-bottom: 1px solid black;
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        transition: 0.2s ease;
+        border-radius: 5px;
+        
+        }
+        input[type="submit"]
+        {
+            margin-bottom: 28px;
+            width: 120px;
+            height: 32px;
+            border: none;
+            border-radius: 8px;
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: 0.2s ease;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+        .right-box{
+            position: absolute;
+            top: 0;
+            right:0;
+            padding: 40px;
+            width: 300px;
+            margin-right: 80px;
+    
+        }
+        .or{
+            position: absolute;
+            top: 200px;
+            left: 278px;
+            width: 40px;
+            height: 40px;
+            background: black;
+            color: white;
+            text-align: center;
+            padding-top: 7px;
+            border-radius: 5px;
+            
+        }
+        
+    
+        
+        
+      /style
+body
+    ul class=&quot;nav justify-content-end lead&quot;
+      li class=&quot;nav-item&quot;
+        a class=&quot;nav-link text-white active&quot; href=&quot;#&quot;Register/a
+      /li
+      li class=&quot;nav-item&quot;
+        a class=&quot;nav-link text-white&quot; href=&quot;#&quot;About Us/a
+      /li
+      li class=&quot;nav-item&quot;
+        a class=&quot;nav-link text-white&quot; href=&quot;#&quot;Contact/a
+      /li
+    /ul
 
-  <title>Team Winterfell</title>
-</head>
-<body>
-    <ul class="nav justify-content-end lead">
-      <li class="nav-item">
-        <a class="nav-link text-white active" href="sign_up.html">Register</a>
-      </li>
-        <a class="nav-link text-white active" href="login.html">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#">Contact</a>
-      </li>
-    </ul>
-
-
-    <div class="row no-gutters" >
-      <div class="col">
-          <div class="leftside"></div>
-      </div>
-      <div class="col no-gutters">
-              <div class="rightside"></div>
-      </div>
-  </div>
-</body>
-</html>
+    div id=&quot;login-box&quot;
+        div class=&quot;left-box&quot;
+            h1Sign-Up/h1
